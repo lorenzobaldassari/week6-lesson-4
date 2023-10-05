@@ -1,0 +1,84 @@
+@import '../functions';
+@import '../variables';
+
+
+
+//ridefiniamo theme-colors che e' la mappa di assegnazione dei colori principale
+
+;
+
+
+
+$new-theme-colors: (
+    'primary':    #7550FE,   //personalizza i colori che vuoi
+    "secondary":  #BF7A29,
+    'third'    :  #BDA9FF,
+    "success":    #1ACB98,
+    "info":       #FFFFFF,
+    "warning    ":    yellow,
+    "danger":     $secondary,
+    "light":      #FFEEDA,
+    "dark":       #d0ced8
+);
+
+$theme-colors: map-merge($theme-colors,$new-theme-colors) ;  
+
+
+
+
+
+
+
+
+
+@import '../bootstrap.scss';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.circle{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle3{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle2{
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    transform: translate(120%,-100%);
+    border-radius: 50px;
+  
+}
+.A {
+    p{
+        font-size: 1em;
+        
+    }
+    button{
+        font-size: 0.7em !important;
+    }
+}
+
+
+
+.xxx{
+    background-color: wheat !important;
+    border-radius: 30px !important;
+    position: absolute !important;
+    top: 50px !important;
+}
